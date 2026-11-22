@@ -1,0 +1,322 @@
+{
+  "_statut": "Filière GSI, semestre 7 (niveau 4) d'après la maquette officielle. Tous les EC ont un TP. Pondérations par défaut (3 CC à 10 %, TP 20 %, examen 50 %) à valider (§8 du cahier des charges). Autres semestres à ajouter.",
+  "parametres": {
+    "note_max": 20,
+    "seuil_validation_ue": 10,
+    "seuil_eliminatoire": 7,
+    "compensation_intra_ue": true,
+    "nb_cc_par_ec": 3,
+    "credits_par_semestre": 30,
+    "credits_par_annee": 60,
+    "sessions": [
+      "Normale",
+      "Rattrapage"
+    ]
+  },
+  "annees_academiques": [
+    {
+      "code": "2026-2027",
+      "debut": "2026-10-01",
+      "fin": "2027-07-31"
+    }
+  ],
+  "diplomes": [
+    {
+      "code": "GSI",
+      "intitule": "Génie Informatique des Systèmes Logistiques Intelligents",
+      "filiere": "Génie Informatique"
+    }
+  ],
+  "niveaux": [
+    {
+      "code": "GSI3",
+      "intitule": "GSI 3 (Année 3)",
+      "diplome": "GSI",
+      "ordre": 3
+    },
+    {
+      "code": "GSI4",
+      "intitule": "GSI 4 (Année 4)",
+      "diplome": "GSI",
+      "ordre": 4
+    }
+  ],
+  "semestres": [
+    {
+      "code": "GSI-S7",
+      "intitule": "Semestre 7",
+      "niveau": "GSI4",
+      "ordre": 7,
+      "credits_requis": 30
+    }
+  ],
+  "ue": [
+    {
+      "code_ue": "GSI71",
+      "intitule": "Initiation à l'Entrepreneuriat 2",
+      "semestre": "GSI-S7",
+      "credits_ects": 8
+    },
+    {
+      "code_ue": "GSI72",
+      "intitule": "Calculabilité, Complexité Algorithmique Avancée et Génie Logiciel",
+      "semestre": "GSI-S7",
+      "credits_ects": 8
+    },
+    {
+      "code_ue": "GSI73",
+      "intitule": "Web Avancé, Terminaux Mobiles, Architectures Spécialisées",
+      "semestre": "GSI-S7",
+      "credits_ects": 12
+    }
+  ],
+  "ec": [
+    {
+      "code_ec": "GSI711",
+      "intitule": "Business plan",
+      "code_ue": "GSI71",
+      "credits_ects": 2,
+      "coefficient": 2,
+      "volume_horaire": {
+        "cm": 4,
+        "td": 4,
+        "tp": 18,
+        "tpe": 4,
+        "total": 30
+      },
+      "a_tp": true,
+      "poids_cc1": 0.1,
+      "poids_cc2": 0.1,
+      "poids_cc3": 0.1,
+      "poids_tp": 0.2,
+      "poids_examen": 0.5
+    },
+    {
+      "code_ec": "GSI712",
+      "intitule": "Constitution d'une équipe projet",
+      "code_ue": "GSI71",
+      "credits_ects": 2,
+      "coefficient": 2,
+      "volume_horaire": {
+        "cm": 4,
+        "td": 4,
+        "tp": 18,
+        "tpe": 4,
+        "total": 30
+      },
+      "a_tp": true,
+      "poids_cc1": 0.1,
+      "poids_cc2": 0.1,
+      "poids_cc3": 0.1,
+      "poids_tp": 0.2,
+      "poids_examen": 0.5
+    },
+    {
+      "code_ec": "GSI713",
+      "intitule": "Validation technique d'un projet",
+      "code_ue": "GSI71",
+      "credits_ects": 2,
+      "coefficient": 2,
+      "volume_horaire": {
+        "cm": 4,
+        "td": 4,
+        "tp": 18,
+        "tpe": 4,
+        "total": 30
+      },
+      "a_tp": true,
+      "poids_cc1": 0.1,
+      "poids_cc2": 0.1,
+      "poids_cc3": 0.1,
+      "poids_tp": 0.2,
+      "poids_examen": 0.5
+    },
+    {
+      "code_ec": "GSI714",
+      "intitule": "Prototypage du produit ou service",
+      "code_ue": "GSI71",
+      "credits_ects": 2,
+      "coefficient": 2,
+      "volume_horaire": {
+        "cm": 4,
+        "td": 4,
+        "tp": 18,
+        "tpe": 4,
+        "total": 30
+      },
+      "a_tp": true,
+      "poids_cc1": 0.1,
+      "poids_cc2": 0.1,
+      "poids_cc3": 0.1,
+      "poids_tp": 0.2,
+      "poids_examen": 0.5
+    },
+    {
+      "code_ec": "GSI721",
+      "intitule": "Complexité et Structure de données avancée",
+      "code_ue": "GSI72",
+      "credits_ects": 2,
+      "coefficient": 2,
+      "volume_horaire": {
+        "cm": 4,
+        "td": 4,
+        "tp": 18,
+        "tpe": 4,
+        "total": 30
+      },
+      "a_tp": true,
+      "poids_cc1": 0.1,
+      "poids_cc2": 0.1,
+      "poids_cc3": 0.1,
+      "poids_tp": 0.2,
+      "poids_examen": 0.5
+    },
+    {
+      "code_ec": "GSI722",
+      "intitule": "Calculabilité",
+      "code_ue": "GSI72",
+      "credits_ects": 2,
+      "coefficient": 2,
+      "volume_horaire": {
+        "cm": 4,
+        "td": 4,
+        "tp": 18,
+        "tpe": 4,
+        "total": 30
+      },
+      "a_tp": true,
+      "poids_cc1": 0.1,
+      "poids_cc2": 0.1,
+      "poids_cc3": 0.1,
+      "poids_tp": 0.2,
+      "poids_examen": 0.5
+    },
+    {
+      "code_ec": "GSI723",
+      "intitule": "Vérification et validation des logiciels",
+      "code_ue": "GSI72",
+      "credits_ects": 2,
+      "coefficient": 2,
+      "volume_horaire": {
+        "cm": 4,
+        "td": 4,
+        "tp": 18,
+        "tpe": 4,
+        "total": 30
+      },
+      "a_tp": true,
+      "poids_cc1": 0.1,
+      "poids_cc2": 0.1,
+      "poids_cc3": 0.1,
+      "poids_tp": 0.2,
+      "poids_examen": 0.5
+    },
+    {
+      "code_ec": "GSI724",
+      "intitule": "UML Design Patterns, Web sémantique",
+      "code_ue": "GSI72",
+      "credits_ects": 2,
+      "coefficient": 2,
+      "volume_horaire": {
+        "cm": 4,
+        "td": 4,
+        "tp": 18,
+        "tpe": 4,
+        "total": 30
+      },
+      "a_tp": true,
+      "poids_cc1": 0.1,
+      "poids_cc2": 0.1,
+      "poids_cc3": 0.1,
+      "poids_tp": 0.2,
+      "poids_examen": 0.5
+    },
+    {
+      "code_ec": "GSI731",
+      "intitule": "Programmation avancée orientée objet et web",
+      "code_ue": "GSI73",
+      "credits_ects": 3,
+      "coefficient": 3,
+      "volume_horaire": {
+        "cm": 15,
+        "td": 15,
+        "tp": null,
+        "tpe": 6,
+        "total": 45
+      },
+      "a_tp": true,
+      "poids_cc1": 0.1,
+      "poids_cc2": 0.1,
+      "poids_cc3": 0.1,
+      "poids_tp": 0.2,
+      "poids_examen": 0.5
+    },
+    {
+      "code_ec": "GSI732",
+      "intitule": "Terminaux mobiles et hébergement",
+      "code_ue": "GSI73",
+      "credits_ects": 3,
+      "coefficient": 3,
+      "volume_horaire": {
+        "cm": 10,
+        "td": 10,
+        "tp": 19,
+        "tpe": 6,
+        "total": 45
+      },
+      "a_tp": true,
+      "poids_cc1": 0.1,
+      "poids_cc2": 0.1,
+      "poids_cc3": 0.1,
+      "poids_tp": 0.2,
+      "poids_examen": 0.5
+    },
+    {
+      "code_ec": "GSI733",
+      "intitule": "Microprocesseurs et multi-coeurs",
+      "code_ue": "GSI73",
+      "credits_ects": 3,
+      "coefficient": 3,
+      "volume_horaire": {
+        "cm": 10,
+        "td": 10,
+        "tp": 19,
+        "tpe": 6,
+        "total": 45
+      },
+      "a_tp": true,
+      "poids_cc1": 0.1,
+      "poids_cc2": 0.1,
+      "poids_cc3": 0.1,
+      "poids_tp": 0.2,
+      "poids_examen": 0.5
+    },
+    {
+      "code_ec": "GSI734",
+      "intitule": "Programmation sur FPGA, GPU, Arduino",
+      "code_ue": "GSI73",
+      "credits_ects": 3,
+      "coefficient": 3,
+      "volume_horaire": {
+        "cm": 10,
+        "td": 10,
+        "tp": 19,
+        "tpe": 6,
+        "total": 45
+      },
+      "a_tp": true,
+      "poids_cc1": 0.1,
+      "poids_cc2": 0.1,
+      "poids_cc3": 0.1,
+      "poids_tp": 0.2,
+      "poids_examen": 0.5
+    }
+  ],
+  "groupes": [
+    {
+      "code": "GSI4-A",
+      "intitule": "GSI 4 - Groupe A",
+      "niveau": "GSI4"
+    }
+  ]
+}
