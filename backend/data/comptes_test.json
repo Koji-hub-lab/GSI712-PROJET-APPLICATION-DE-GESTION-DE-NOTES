@@ -1,0 +1,205 @@
+{
+  "_statut": "Comptes de TEST fictifs (noms et e-mails inventés). Mot de passe commun à remplacer en production. Le backend hache le mot de passe à la création. Matricules fictifs au format de l'ESTLC (année d'entrée, TLC, 3 chiffres, 1 lettre).",
+  "mot_de_passe_test": "Test@1234",
+  "administrateurs": [
+    {
+      "identifiant": "admin.test",
+      "name": "Administrateur Test",
+      "email": "admin@estlc.test",
+      "password": "Test@1234",
+      "role": "ADMIN",
+      "telephone": "670000000"
+    }
+  ],
+  "enseignants": [
+    {
+      "code_enseignant": "ENS001",
+      "identifiant": "ENS001",
+      "name": "Nkomo Paul",
+      "email": "p.nkomo@estlc.test",
+      "password": "Test@1234",
+      "role": "TEACHER",
+      "telephone": "671000001",
+      "ec_affectes": [
+        "GSI721",
+        "GSI722",
+        "GSI723",
+        "GSI724"
+      ]
+    },
+    {
+      "code_enseignant": "ENS002",
+      "identifiant": "ENS002",
+      "name": "Mballa Claire",
+      "email": "c.mballa@estlc.test",
+      "password": "Test@1234",
+      "role": "TEACHER",
+      "telephone": "671000002",
+      "ec_affectes": [
+        "GSI731",
+        "GSI732",
+        "GSI733",
+        "GSI734"
+      ]
+    },
+    {
+      "code_enseignant": "ENS003",
+      "identifiant": "ENS003",
+      "name": "Essomba Jean",
+      "email": "j.essomba@estlc.test",
+      "password": "Test@1234",
+      "role": "TEACHER",
+      "telephone": "671000003",
+      "ec_affectes": [
+        "GSI711",
+        "GSI712",
+        "GSI713",
+        "GSI714",
+        "GSI522",
+        "GSI524"
+      ]
+    }
+  ],
+  "etudiants": [
+    {
+      "matricule": "23TLC101C",
+      "identifiant": "23TLC101C",
+      "name": "Abena Marie",
+      "email": "marie.a@estlc.test",
+      "password": "Test@1234",
+      "role": "STUDENT",
+      "diplome": "GSI",
+      "niveau": "GSI4",
+      "semestre_courant": "GSI-S7",
+      "groupe": "GSI4-A",
+      "statut": "Actif",
+      "annee_entree": 2023
+    },
+    {
+      "matricule": "23TLC108L",
+      "identifiant": "23TLC108L",
+      "name": "Biyong Samuel",
+      "email": "samuel.b@estlc.test",
+      "password": "Test@1234",
+      "role": "STUDENT",
+      "diplome": "GSI",
+      "niveau": "GSI4",
+      "semestre_courant": "GSI-S7",
+      "groupe": "GSI4-A",
+      "statut": "Actif",
+      "annee_entree": 2023
+    },
+    {
+      "matricule": "23TLC115S",
+      "identifiant": "23TLC115S",
+      "name": "Chindjang Aïcha",
+      "email": "aicha.c@estlc.test",
+      "password": "Test@1234",
+      "role": "STUDENT",
+      "diplome": "GSI",
+      "niveau": "GSI4",
+      "semestre_courant": "GSI-S7",
+      "groupe": "GSI4-A",
+      "statut": "Actif",
+      "annee_entree": 2023
+    },
+    {
+      "matricule": "23TLC122Z",
+      "identifiant": "23TLC122Z",
+      "name": "Dongmo Patrick",
+      "email": "patrick.d@estlc.test",
+      "password": "Test@1234",
+      "role": "STUDENT",
+      "diplome": "GSI",
+      "niveau": "GSI4",
+      "semestre_courant": "GSI-S7",
+      "groupe": "GSI4-A",
+      "statut": "Actif",
+      "annee_entree": 2023
+    },
+    {
+      "matricule": "23TLC129E",
+      "identifiant": "23TLC129E",
+      "name": "Eyenga Ruth",
+      "email": "ruth.e@estlc.test",
+      "password": "Test@1234",
+      "role": "STUDENT",
+      "diplome": "GSI",
+      "niveau": "GSI4",
+      "semestre_courant": "GSI-S7",
+      "groupe": "GSI4-A",
+      "statut": "Actif",
+      "annee_entree": 2023
+    },
+    {
+      "matricule": "23TLC136N",
+      "identifiant": "23TLC136N",
+      "name": "Fouda Kevin",
+      "email": "kevin.f@estlc.test",
+      "password": "Test@1234",
+      "role": "STUDENT",
+      "diplome": "GSI",
+      "niveau": "GSI4",
+      "semestre_courant": "GSI-S7",
+      "groupe": "GSI4-A",
+      "statut": "Actif",
+      "annee_entree": 2023
+    },
+    {
+      "matricule": "24TLC143U",
+      "identifiant": "24TLC143U",
+      "name": "Gwet Léa",
+      "email": "lea.g@estlc.test",
+      "password": "Test@1234",
+      "role": "STUDENT",
+      "diplome": "GSI",
+      "niveau": "GSI3",
+      "semestre_courant": "GSI-S5",
+      "groupe": "GSI3-A",
+      "statut": "Actif",
+      "annee_entree": 2024
+    },
+    {
+      "matricule": "24TLC150B",
+      "identifiant": "24TLC150B",
+      "name": "Hiol Brice",
+      "email": "brice.h@estlc.test",
+      "password": "Test@1234",
+      "role": "STUDENT",
+      "diplome": "GSI",
+      "niveau": "GSI3",
+      "semestre_courant": "GSI-S5",
+      "groupe": "GSI3-A",
+      "statut": "Actif",
+      "annee_entree": 2024
+    },
+    {
+      "matricule": "24TLC157K",
+      "identifiant": "24TLC157K",
+      "name": "Ikome Sandrine",
+      "email": "sandrine.i@estlc.test",
+      "password": "Test@1234",
+      "role": "STUDENT",
+      "diplome": "GSI",
+      "niveau": "GSI3",
+      "semestre_courant": "GSI-S5",
+      "groupe": "GSI3-A",
+      "statut": "Actif",
+      "annee_entree": 2024
+    },
+    {
+      "matricule": "24TLC164R",
+      "identifiant": "24TLC164R",
+      "name": "Jiogue Arnaud",
+      "email": "arnaud.j@estlc.test",
+      "password": "Test@1234",
+      "role": "STUDENT",
+      "diplome": "GSI",
+      "niveau": "GSI3",
+      "semestre_courant": "GSI-S5",
+      "groupe": "GSI3-A",
+      "statut": "Actif",
+      "annee_entree": 2024
+    }
+  ]
+}
