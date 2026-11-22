@@ -58,6 +58,8 @@ const noteRoutes = require('./routes/noteRoutes');
 app.use('/api/auth', authRoutes);
 app.use('/api/admin', adminRoutes);
 app.use('/api/notes', noteRoutes);
+const deliberationRoutes = require('./routes/deliberationRoutes');
+app.use('/api/deliberation', deliberationRoutes);
 
 // Synchronisation de la BDD et démarrage du serveur
 sequelize.sync({ alter: true })
