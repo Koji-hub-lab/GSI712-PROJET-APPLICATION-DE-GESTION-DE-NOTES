@@ -1,5 +1,5 @@
 {
-  "_statut": "Filière GSI, semestre 7 (niveau 4) d'après la maquette officielle. Tous les EC ont un TP. Pondérations par défaut (3 CC à 10 %, TP 20 %, examen 50 %) à valider (§8 du cahier des charges). Autres semestres à ajouter.",
+  "_statut": "Filière GSI : semestres 5 à 10 d'après la grille officielle des programmes du département de génie informatique. 11 filières déclarées (TTL, GLTCO et 9 spécialités). Pondérations par défaut à valider ; EC du semestre 10 (stage, mémoire, séminaires) hors structure CC/TP/examen.",
   "parametres": {
     "note_max": 20,
     "seuil_validation_ue": 10,
@@ -22,12 +22,108 @@
   ],
   "diplomes": [
     {
+      "code": "TTL",
+      "intitule": "Technologie de transport et logistique",
+      "type": "tronc_commun",
+      "niveau_debut": 1,
+      "niveau_fin": 2
+    },
+    {
+      "code": "GLTCO",
+      "intitule": "Gestion, logistique, transport et commerce",
+      "type": "tronc_commun",
+      "niveau_debut": 1,
+      "niveau_fin": 2
+    },
+    {
       "code": "GSI",
       "intitule": "Génie Informatique des Systèmes Logistiques Intelligents",
-      "filiere": "Génie Informatique"
+      "type": "specialite",
+      "niveau_debut": 3,
+      "niveau_fin": 5
+    },
+    {
+      "code": "GDT",
+      "intitule": "Gestion des transports",
+      "type": "specialite",
+      "niveau_debut": 3,
+      "niveau_fin": 5
+    },
+    {
+      "code": "MFT",
+      "intitule": "Marché financier et trading",
+      "type": "specialite",
+      "niveau_debut": 3,
+      "niveau_fin": 5
+    },
+    {
+      "code": "GSA",
+      "intitule": "Génie informatique des systèmes audiovisuels et logistique",
+      "type": "specialite",
+      "niveau_debut": 3,
+      "niveau_fin": 5
+    },
+    {
+      "code": "GCIM",
+      "intitule": "Génie commercial et intelligence marketing",
+      "type": "specialite",
+      "niveau_debut": 3,
+      "niveau_fin": 5
+    },
+    {
+      "code": "GL",
+      "intitule": "Génie logistique",
+      "type": "specialite",
+      "niveau_debut": 3,
+      "niveau_fin": 5
+    },
+    {
+      "code": "MLS",
+      "intitule": "Management logistics supply chain",
+      "type": "specialite",
+      "niveau_debut": 3,
+      "niveau_fin": 5
+    },
+    {
+      "code": "AMA",
+      "intitule": "Assemblage mécatronique automobile",
+      "type": "specialite",
+      "niveau_debut": 3,
+      "niveau_fin": 5
+    },
+    {
+      "code": "TCT",
+      "intitule": "Technico-commercial des transports",
+      "type": "specialite",
+      "niveau_debut": 3,
+      "niveau_fin": 5
     }
   ],
   "niveaux": [
+    {
+      "code": "TTL1",
+      "intitule": "TTL 1 (Année 1)",
+      "diplome": "TTL",
+      "ordre": 1
+    },
+    {
+      "code": "TTL2",
+      "intitule": "TTL 2 (Année 2)",
+      "diplome": "TTL",
+      "ordre": 2
+    },
+    {
+      "code": "GLTCO1",
+      "intitule": "GLTCO 1 (Année 1)",
+      "diplome": "GLTCO",
+      "ordre": 1
+    },
+    {
+      "code": "GLTCO2",
+      "intitule": "GLTCO 2 (Année 2)",
+      "diplome": "GLTCO",
+      "ordre": 2
+    },
     {
       "code": "GSI3",
       "intitule": "GSI 3 (Année 3)",
@@ -39,38 +135,637 @@
       "intitule": "GSI 4 (Année 4)",
       "diplome": "GSI",
       "ordre": 4
+    },
+    {
+      "code": "GSI5",
+      "intitule": "GSI 5 (Année 5)",
+      "diplome": "GSI",
+      "ordre": 5
     }
   ],
   "semestres": [
+    {
+      "code": "GSI-S5",
+      "intitule": "Semestre 5",
+      "niveau": "GSI3",
+      "ordre": 5,
+      "credits_requis": 30
+    },
+    {
+      "code": "GSI-S6",
+      "intitule": "Semestre 6",
+      "niveau": "GSI3",
+      "ordre": 6,
+      "credits_requis": 30
+    },
     {
       "code": "GSI-S7",
       "intitule": "Semestre 7",
       "niveau": "GSI4",
       "ordre": 7,
       "credits_requis": 30
+    },
+    {
+      "code": "GSI-S8",
+      "intitule": "Semestre 8",
+      "niveau": "GSI4",
+      "ordre": 8,
+      "credits_requis": 30
+    },
+    {
+      "code": "GSI-S9",
+      "intitule": "Semestre 9",
+      "niveau": "GSI5",
+      "ordre": 9,
+      "credits_requis": 30
+    },
+    {
+      "code": "GSI-S10",
+      "intitule": "Semestre 10",
+      "niveau": "GSI5",
+      "ordre": 10,
+      "credits_requis": 30
     }
   ],
   "ue": [
     {
+      "code_ue": "GSI51",
+      "intitule": "Initiation à l'Entreprenariat 1",
+      "semestre": "GSI-S5",
+      "credits_ects": 7
+    },
+    {
+      "code_ue": "GSI52",
+      "intitule": "Informatique Fondamental 1",
+      "semestre": "GSI-S5",
+      "credits_ects": 11
+    },
+    {
+      "code_ue": "GSI53",
+      "intitule": "Bases de Données, Programmation, Systèmes Embarqués",
+      "semestre": "GSI-S5",
+      "credits_ects": 12
+    },
+    {
+      "code_ue": "GSI61",
+      "intitule": "Compétences Transversales 1",
+      "semestre": "GSI-S6",
+      "credits_ects": 8
+    },
+    {
+      "code_ue": "GSI62",
+      "intitule": "Informatique décisionnelle, Fouille des Données, Apprentissage Artificiel",
+      "semestre": "GSI-S6",
+      "credits_ects": 10
+    },
+    {
+      "code_ue": "GSI63",
+      "intitule": "Sécurité, Programmation et administration système sous Linux",
+      "semestre": "GSI-S6",
+      "credits_ects": 12
+    },
+    {
       "code_ue": "GSI71",
-      "intitule": "Initiation à l'Entrepreneuriat 2",
+      "intitule": "Initiation à l'Entreprenariat 2",
       "semestre": "GSI-S7",
       "credits_ects": 8
     },
     {
       "code_ue": "GSI72",
-      "intitule": "Calculabilité, Complexité Algorithmique Avancée et Génie Logiciel",
+      "intitule": "Calculabilité, complexité algorithmique avancée et génie logiciel",
       "semestre": "GSI-S7",
-      "credits_ects": 8
+      "credits_ects": 10
     },
     {
       "code_ue": "GSI73",
-      "intitule": "Web Avancé, Terminaux Mobiles, Architectures Spécialisées",
+      "intitule": "Web avancé, terminaux mobile, architectures spécialisées",
       "semestre": "GSI-S7",
       "credits_ects": 12
+    },
+    {
+      "code_ue": "GSI81",
+      "intitule": "Compétences Transversales 2",
+      "semestre": "GSI-S8",
+      "credits_ects": 8
+    },
+    {
+      "code_ue": "GSI82",
+      "intitule": "Systèmes Embarqués, Systèmes d'exploitation, Objets connectés",
+      "semestre": "GSI-S8",
+      "credits_ects": 10
+    },
+    {
+      "code_ue": "GSI83",
+      "intitule": "Base de données avancées et Compilation",
+      "semestre": "GSI-S8",
+      "credits_ects": 12
+    },
+    {
+      "code_ue": "GSI91",
+      "intitule": "Initiation à l'Entreprenariat 3 et à la rédaction du mémoire",
+      "semestre": "GSI-S9",
+      "credits_ects": 8
+    },
+    {
+      "code_ue": "GSI92",
+      "intitule": "Sécurité, Système d'information logistique et génie logiciel",
+      "semestre": "GSI-S9",
+      "credits_ects": 10
+    },
+    {
+      "code_ue": "GSI93",
+      "intitule": "Science de données et apprentissage artificiel",
+      "semestre": "GSI-S9",
+      "credits_ects": 12
+    },
+    {
+      "code_ue": "GSI101",
+      "intitule": "Insertion Professionnelle",
+      "semestre": "GSI-S10",
+      "credits_ects": 30
     }
   ],
   "ec": [
+    {
+      "code_ec": "GSI511",
+      "intitule": "Étude de marché et faisabilité 1",
+      "code_ue": "GSI51",
+      "credits_ects": 1,
+      "coefficient": 1,
+      "volume_horaire": {
+        "cm": 10,
+        "td": 3,
+        "tp": null,
+        "tpe": 2,
+        "total": 15
+      },
+      "a_tp": true,
+      "poids_cc1": 0.1,
+      "poids_cc2": 0.1,
+      "poids_cc3": 0.1,
+      "poids_tp": 0.2,
+      "poids_examen": 0.5
+    },
+    {
+      "code_ec": "GSI512",
+      "intitule": "Introduction à l'idéation",
+      "code_ue": "GSI51",
+      "credits_ects": 2,
+      "coefficient": 2,
+      "volume_horaire": {
+        "cm": 4,
+        "td": 4,
+        "tp": 18,
+        "tpe": 4,
+        "total": 30
+      },
+      "a_tp": true,
+      "poids_cc1": 0.1,
+      "poids_cc2": 0.1,
+      "poids_cc3": 0.1,
+      "poids_tp": 0.2,
+      "poids_examen": 0.5
+    },
+    {
+      "code_ec": "GSI513",
+      "intitule": "Élaboration du concept de projet de création d'entreprise",
+      "code_ue": "GSI51",
+      "credits_ects": 2,
+      "coefficient": 2,
+      "volume_horaire": {
+        "cm": 4,
+        "td": 4,
+        "tp": 18,
+        "tpe": 4,
+        "total": 30
+      },
+      "a_tp": true,
+      "poids_cc1": 0.1,
+      "poids_cc2": 0.1,
+      "poids_cc3": 0.1,
+      "poids_tp": 0.2,
+      "poids_examen": 0.5
+    },
+    {
+      "code_ec": "GSI514",
+      "intitule": "Statut juridique de l'entreprenant",
+      "code_ue": "GSI51",
+      "credits_ects": 2,
+      "coefficient": 2,
+      "volume_horaire": {
+        "cm": 4,
+        "td": 4,
+        "tp": 18,
+        "tpe": 4,
+        "total": 30
+      },
+      "a_tp": true,
+      "poids_cc1": 0.1,
+      "poids_cc2": 0.1,
+      "poids_cc3": 0.1,
+      "poids_tp": 0.2,
+      "poids_examen": 0.5
+    },
+    {
+      "code_ec": "GSI521",
+      "intitule": "Calcul scientifique",
+      "code_ue": "GSI52",
+      "credits_ects": 2,
+      "coefficient": 2,
+      "volume_horaire": {
+        "cm": 10,
+        "td": 6,
+        "tp": 10,
+        "tpe": 4,
+        "total": 30
+      },
+      "a_tp": true,
+      "poids_cc1": 0.1,
+      "poids_cc2": 0.1,
+      "poids_cc3": 0.1,
+      "poids_tp": 0.2,
+      "poids_examen": 0.5
+    },
+    {
+      "code_ec": "GSI522",
+      "intitule": "Conception et analyse des algorithmes",
+      "code_ue": "GSI52",
+      "credits_ects": 3,
+      "coefficient": 3,
+      "volume_horaire": {
+        "cm": 12,
+        "td": 12,
+        "tp": 15,
+        "tpe": 6,
+        "total": 45
+      },
+      "a_tp": true,
+      "poids_cc1": 0.1,
+      "poids_cc2": 0.1,
+      "poids_cc3": 0.1,
+      "poids_tp": 0.2,
+      "poids_examen": 0.5
+    },
+    {
+      "code_ec": "GSI523",
+      "intitule": "Réseaux de capteurs, réseaux locaux",
+      "code_ue": "GSI52",
+      "credits_ects": 3,
+      "coefficient": 3,
+      "volume_horaire": {
+        "cm": 12,
+        "td": 7,
+        "tp": 20,
+        "tpe": 6,
+        "total": 45
+      },
+      "a_tp": true,
+      "poids_cc1": 0.1,
+      "poids_cc2": 0.1,
+      "poids_cc3": 0.1,
+      "poids_tp": 0.2,
+      "poids_examen": 0.5
+    },
+    {
+      "code_ec": "GSI524",
+      "intitule": "Langage formel et compilation",
+      "code_ue": "GSI52",
+      "credits_ects": 3,
+      "coefficient": 3,
+      "volume_horaire": {
+        "cm": 12,
+        "td": 12,
+        "tp": 15,
+        "tpe": 6,
+        "total": 45
+      },
+      "a_tp": true,
+      "poids_cc1": 0.1,
+      "poids_cc2": 0.1,
+      "poids_cc3": 0.1,
+      "poids_tp": 0.2,
+      "poids_examen": 0.5
+    },
+    {
+      "code_ec": "GSI531",
+      "intitule": "Programmation assembleur et C",
+      "code_ue": "GSI53",
+      "credits_ects": 3,
+      "coefficient": 3,
+      "volume_horaire": {
+        "cm": 10,
+        "td": 10,
+        "tp": 19,
+        "tpe": 6,
+        "total": 45
+      },
+      "a_tp": true,
+      "poids_cc1": 0.1,
+      "poids_cc2": 0.1,
+      "poids_cc3": 0.1,
+      "poids_tp": 0.2,
+      "poids_examen": 0.5
+    },
+    {
+      "code_ec": "GSI532",
+      "intitule": "Programmation web et mobile",
+      "code_ue": "GSI53",
+      "credits_ects": 3,
+      "coefficient": 3,
+      "volume_horaire": {
+        "cm": 10,
+        "td": 10,
+        "tp": 19,
+        "tpe": 6,
+        "total": 45
+      },
+      "a_tp": true,
+      "poids_cc1": 0.1,
+      "poids_cc2": 0.1,
+      "poids_cc3": 0.1,
+      "poids_tp": 0.2,
+      "poids_examen": 0.5
+    },
+    {
+      "code_ec": "GSI533",
+      "intitule": "Conception et administration des BDs",
+      "code_ue": "GSI53",
+      "credits_ects": 3,
+      "coefficient": 3,
+      "volume_horaire": {
+        "cm": 10,
+        "td": 10,
+        "tp": 19,
+        "tpe": 6,
+        "total": 45
+      },
+      "a_tp": true,
+      "poids_cc1": 0.1,
+      "poids_cc2": 0.1,
+      "poids_cc3": 0.1,
+      "poids_tp": 0.2,
+      "poids_examen": 0.5
+    },
+    {
+      "code_ec": "GSI534",
+      "intitule": "Microcontrôleurs et systèmes embarqués",
+      "code_ue": "GSI53",
+      "credits_ects": 3,
+      "coefficient": 3,
+      "volume_horaire": {
+        "cm": 10,
+        "td": 10,
+        "tp": 19,
+        "tpe": 6,
+        "total": 45
+      },
+      "a_tp": true,
+      "poids_cc1": 0.1,
+      "poids_cc2": 0.1,
+      "poids_cc3": 0.1,
+      "poids_tp": 0.2,
+      "poids_examen": 0.5
+    },
+    {
+      "code_ec": "GSI611",
+      "intitule": "Communication professionnelle 1",
+      "code_ue": "GSI61",
+      "credits_ects": 2,
+      "coefficient": 2,
+      "volume_horaire": {
+        "cm": 6,
+        "td": 5,
+        "tp": 15,
+        "tpe": 4,
+        "total": 30
+      },
+      "a_tp": true,
+      "poids_cc1": 0.1,
+      "poids_cc2": 0.1,
+      "poids_cc3": 0.1,
+      "poids_tp": 0.2,
+      "poids_examen": 0.5
+    },
+    {
+      "code_ec": "GSI612",
+      "intitule": "Anglais professionnel 1",
+      "code_ue": "GSI61",
+      "credits_ects": 2,
+      "coefficient": 2,
+      "volume_horaire": {
+        "cm": 10,
+        "td": 5,
+        "tp": 11,
+        "tpe": 4,
+        "total": 30
+      },
+      "a_tp": true,
+      "poids_cc1": 0.1,
+      "poids_cc2": 0.1,
+      "poids_cc3": 0.1,
+      "poids_tp": 0.2,
+      "poids_examen": 0.5
+    },
+    {
+      "code_ec": "GSI613",
+      "intitule": "EPS",
+      "code_ue": "GSI61",
+      "credits_ects": 2,
+      "coefficient": 2,
+      "volume_horaire": {
+        "cm": 6,
+        "td": 5,
+        "tp": 15,
+        "tpe": 4,
+        "total": 30
+      },
+      "a_tp": true,
+      "poids_cc1": 0.1,
+      "poids_cc2": 0.1,
+      "poids_cc3": 0.1,
+      "poids_tp": 0.2,
+      "poids_examen": 0.5
+    },
+    {
+      "code_ec": "GSI614",
+      "intitule": "Stage agent de maîtrise 1",
+      "code_ue": "GSI61",
+      "credits_ects": 2,
+      "coefficient": 2,
+      "volume_horaire": {
+        "cm": 6,
+        "td": 5,
+        "tp": 15,
+        "tpe": 4,
+        "total": 30
+      },
+      "a_tp": true,
+      "poids_cc1": 0.1,
+      "poids_cc2": 0.1,
+      "poids_cc3": 0.1,
+      "poids_tp": 0.2,
+      "poids_examen": 0.5
+    },
+    {
+      "code_ec": "GSI621",
+      "intitule": "ERP et SI logistiques",
+      "code_ue": "GSI62",
+      "credits_ects": 2,
+      "coefficient": 2,
+      "volume_horaire": {
+        "cm": 10,
+        "td": 6,
+        "tp": 10,
+        "tpe": 4,
+        "total": 30
+      },
+      "a_tp": true,
+      "poids_cc1": 0.1,
+      "poids_cc2": 0.1,
+      "poids_cc3": 0.1,
+      "poids_tp": 0.2,
+      "poids_examen": 0.5
+    },
+    {
+      "code_ec": "GSI622",
+      "intitule": "BI, approche OO, modélisation des SI",
+      "code_ue": "GSI62",
+      "credits_ects": 2,
+      "coefficient": 2,
+      "volume_horaire": {
+        "cm": 9,
+        "td": 8,
+        "tp": 7,
+        "tpe": 6,
+        "total": 30
+      },
+      "a_tp": true,
+      "poids_cc1": 0.1,
+      "poids_cc2": 0.1,
+      "poids_cc3": 0.1,
+      "poids_tp": 0.2,
+      "poids_examen": 0.5
+    },
+    {
+      "code_ec": "GSI623",
+      "intitule": "Informatique décisionnelle et fouille de données",
+      "code_ue": "GSI62",
+      "credits_ects": 3,
+      "coefficient": 3,
+      "volume_horaire": {
+        "cm": 12,
+        "td": 7,
+        "tp": 20,
+        "tpe": 6,
+        "total": 45
+      },
+      "a_tp": true,
+      "poids_cc1": 0.1,
+      "poids_cc2": 0.1,
+      "poids_cc3": 0.1,
+      "poids_tp": 0.2,
+      "poids_examen": 0.5
+    },
+    {
+      "code_ec": "GSI624",
+      "intitule": "Jeux de données et IA",
+      "code_ue": "GSI62",
+      "credits_ects": 3,
+      "coefficient": 3,
+      "volume_horaire": {
+        "cm": 12,
+        "td": 12,
+        "tp": 15,
+        "tpe": 6,
+        "total": 45
+      },
+      "a_tp": true,
+      "poids_cc1": 0.1,
+      "poids_cc2": 0.1,
+      "poids_cc3": 0.1,
+      "poids_tp": 0.2,
+      "poids_examen": 0.5
+    },
+    {
+      "code_ec": "GSI631",
+      "intitule": "Cryptographie et investigation numérique",
+      "code_ue": "GSI63",
+      "credits_ects": 3,
+      "coefficient": 3,
+      "volume_horaire": {
+        "cm": 15,
+        "td": 15,
+        "tp": 9,
+        "tpe": 6,
+        "total": 45
+      },
+      "a_tp": true,
+      "poids_cc1": 0.1,
+      "poids_cc2": 0.1,
+      "poids_cc3": 0.1,
+      "poids_tp": 0.2,
+      "poids_examen": 0.5
+    },
+    {
+      "code_ec": "GSI632",
+      "intitule": "Sécurité logicielle",
+      "code_ue": "GSI63",
+      "credits_ects": 3,
+      "coefficient": 3,
+      "volume_horaire": {
+        "cm": 10,
+        "td": 10,
+        "tp": 19,
+        "tpe": 6,
+        "total": 45
+      },
+      "a_tp": true,
+      "poids_cc1": 0.1,
+      "poids_cc2": 0.1,
+      "poids_cc3": 0.1,
+      "poids_tp": 0.2,
+      "poids_examen": 0.5
+    },
+    {
+      "code_ec": "GSI633",
+      "intitule": "Systèmes d'exploitation et systèmes embarqués I",
+      "code_ue": "GSI63",
+      "credits_ects": 3,
+      "coefficient": 3,
+      "volume_horaire": {
+        "cm": 10,
+        "td": 10,
+        "tp": 19,
+        "tpe": 6,
+        "total": 45
+      },
+      "a_tp": true,
+      "poids_cc1": 0.1,
+      "poids_cc2": 0.1,
+      "poids_cc3": 0.1,
+      "poids_tp": 0.2,
+      "poids_examen": 0.5
+    },
+    {
+      "code_ec": "GSI634",
+      "intitule": "Administration et programmation système",
+      "code_ue": "GSI63",
+      "credits_ects": 3,
+      "coefficient": 3,
+      "volume_horaire": {
+        "cm": 10,
+        "td": 10,
+        "tp": 19,
+        "tpe": 6,
+        "total": 45
+      },
+      "a_tp": true,
+      "poids_cc1": 0.1,
+      "poids_cc2": 0.1,
+      "poids_cc3": 0.1,
+      "poids_tp": 0.2,
+      "poids_examen": 0.5
+    },
     {
       "code_ec": "GSI711",
       "intitule": "Business plan",
@@ -153,14 +848,14 @@
     },
     {
       "code_ec": "GSI721",
-      "intitule": "Complexité et Structure de données avancée",
+      "intitule": "Complexité et structure de données avancée",
       "code_ue": "GSI72",
       "credits_ects": 2,
       "coefficient": 2,
       "volume_horaire": {
-        "cm": 4,
-        "td": 4,
-        "tp": 18,
+        "cm": 10,
+        "td": 6,
+        "tp": 10,
         "tpe": 4,
         "total": 30
       },
@@ -178,10 +873,10 @@
       "credits_ects": 2,
       "coefficient": 2,
       "volume_horaire": {
-        "cm": 4,
-        "td": 4,
-        "tp": 18,
-        "tpe": 4,
+        "cm": 9,
+        "td": 8,
+        "tp": 7,
+        "tpe": 6,
         "total": 30
       },
       "a_tp": true,
@@ -195,14 +890,14 @@
       "code_ec": "GSI723",
       "intitule": "Vérification et validation des logiciels",
       "code_ue": "GSI72",
-      "credits_ects": 2,
-      "coefficient": 2,
+      "credits_ects": 3,
+      "coefficient": 3,
       "volume_horaire": {
-        "cm": 4,
-        "td": 4,
-        "tp": 18,
-        "tpe": 4,
-        "total": 30
+        "cm": 12,
+        "td": 7,
+        "tp": 20,
+        "tpe": 6,
+        "total": 45
       },
       "a_tp": true,
       "poids_cc1": 0.1,
@@ -213,16 +908,16 @@
     },
     {
       "code_ec": "GSI724",
-      "intitule": "UML Design Patterns, Web sémantique",
+      "intitule": "UML Design Patterns, web sémantique",
       "code_ue": "GSI72",
-      "credits_ects": 2,
-      "coefficient": 2,
+      "credits_ects": 3,
+      "coefficient": 3,
       "volume_horaire": {
-        "cm": 4,
-        "td": 4,
-        "tp": 18,
-        "tpe": 4,
-        "total": 30
+        "cm": 12,
+        "td": 12,
+        "tp": 15,
+        "tpe": 6,
+        "total": 45
       },
       "a_tp": true,
       "poids_cc1": 0.1,
@@ -233,14 +928,14 @@
     },
     {
       "code_ec": "GSI731",
-      "intitule": "Programmation avancée orientée objet et web",
+      "intitule": "POO et programmation web",
       "code_ue": "GSI73",
       "credits_ects": 3,
       "coefficient": 3,
       "volume_horaire": {
         "cm": 15,
         "td": 15,
-        "tp": null,
+        "tp": 9,
         "tpe": 6,
         "total": 45
       },
@@ -273,7 +968,7 @@
     },
     {
       "code_ec": "GSI733",
-      "intitule": "Microprocesseurs et multi-coeurs",
+      "intitule": "Microprocesseur et multi-coeurs",
       "code_ue": "GSI73",
       "credits_ects": 3,
       "coefficient": 3,
@@ -293,7 +988,7 @@
     },
     {
       "code_ec": "GSI734",
-      "intitule": "Programmation sur FPGA, GPU, Arduino",
+      "intitule": "Architectures FPGA, GPU, Arduino",
       "code_ue": "GSI73",
       "credits_ects": 3,
       "coefficient": 3,
@@ -310,9 +1005,542 @@
       "poids_cc3": 0.1,
       "poids_tp": 0.2,
       "poids_examen": 0.5
+    },
+    {
+      "code_ec": "GSI811",
+      "intitule": "Communication professionnelle 2",
+      "code_ue": "GSI81",
+      "credits_ects": 2,
+      "coefficient": 2,
+      "volume_horaire": {
+        "cm": 6,
+        "td": 5,
+        "tp": 15,
+        "tpe": 4,
+        "total": 30
+      },
+      "a_tp": true,
+      "poids_cc1": 0.1,
+      "poids_cc2": 0.1,
+      "poids_cc3": 0.1,
+      "poids_tp": 0.2,
+      "poids_examen": 0.5
+    },
+    {
+      "code_ec": "GSI812",
+      "intitule": "Anglais professionnel 2",
+      "code_ue": "GSI81",
+      "credits_ects": 2,
+      "coefficient": 2,
+      "volume_horaire": {
+        "cm": 10,
+        "td": 5,
+        "tp": 11,
+        "tpe": 4,
+        "total": 30
+      },
+      "a_tp": true,
+      "poids_cc1": 0.1,
+      "poids_cc2": 0.1,
+      "poids_cc3": 0.1,
+      "poids_tp": 0.2,
+      "poids_examen": 0.5
+    },
+    {
+      "code_ec": "GSI813",
+      "intitule": "EPS",
+      "code_ue": "GSI81",
+      "credits_ects": 2,
+      "coefficient": 2,
+      "volume_horaire": {
+        "cm": 6,
+        "td": 5,
+        "tp": 15,
+        "tpe": 4,
+        "total": 30
+      },
+      "a_tp": true,
+      "poids_cc1": 0.1,
+      "poids_cc2": 0.1,
+      "poids_cc3": 0.1,
+      "poids_tp": 0.2,
+      "poids_examen": 0.5
+    },
+    {
+      "code_ec": "GSI814",
+      "intitule": "Projet tutoré",
+      "code_ue": "GSI81",
+      "credits_ects": 2,
+      "coefficient": 2,
+      "volume_horaire": {
+        "cm": 6,
+        "td": 5,
+        "tp": 15,
+        "tpe": 4,
+        "total": 30
+      },
+      "a_tp": true,
+      "poids_cc1": 0.1,
+      "poids_cc2": 0.1,
+      "poids_cc3": 0.1,
+      "poids_tp": 0.2,
+      "poids_examen": 0.5
+    },
+    {
+      "code_ec": "GSI821",
+      "intitule": "Systèmes d'exploitation et systèmes embarqués II",
+      "code_ue": "GSI82",
+      "credits_ects": 2,
+      "coefficient": 2,
+      "volume_horaire": {
+        "cm": 10,
+        "td": 6,
+        "tp": 10,
+        "tpe": 4,
+        "total": 30
+      },
+      "a_tp": true,
+      "poids_cc1": 0.1,
+      "poids_cc2": 0.1,
+      "poids_cc3": 0.1,
+      "poids_tp": 0.2,
+      "poids_examen": 0.5
+    },
+    {
+      "code_ec": "GSI822",
+      "intitule": "Objets connectés et SE pour drone",
+      "code_ue": "GSI82",
+      "credits_ects": 2,
+      "coefficient": 2,
+      "volume_horaire": {
+        "cm": 9,
+        "td": 8,
+        "tp": 7,
+        "tpe": 6,
+        "total": 30
+      },
+      "a_tp": true,
+      "poids_cc1": 0.1,
+      "poids_cc2": 0.1,
+      "poids_cc3": 0.1,
+      "poids_tp": 0.2,
+      "poids_examen": 0.5
+    },
+    {
+      "code_ec": "GSI823",
+      "intitule": "Systèmes autonomes connectés",
+      "code_ue": "GSI82",
+      "credits_ects": 3,
+      "coefficient": 3,
+      "volume_horaire": {
+        "cm": 12,
+        "td": 12,
+        "tp": 15,
+        "tpe": 6,
+        "total": 45
+      },
+      "a_tp": true,
+      "poids_cc1": 0.1,
+      "poids_cc2": 0.1,
+      "poids_cc3": 0.1,
+      "poids_tp": 0.2,
+      "poids_examen": 0.5
+    },
+    {
+      "code_ec": "GSI824",
+      "intitule": "Objets connectés et cloud computing",
+      "code_ue": "GSI82",
+      "credits_ects": 3,
+      "coefficient": 3,
+      "volume_horaire": {
+        "cm": 12,
+        "td": 12,
+        "tp": 15,
+        "tpe": 6,
+        "total": 45
+      },
+      "a_tp": true,
+      "poids_cc1": 0.1,
+      "poids_cc2": 0.1,
+      "poids_cc3": 0.1,
+      "poids_tp": 0.2,
+      "poids_examen": 0.5
+    },
+    {
+      "code_ec": "GSI831",
+      "intitule": "BD classiques et BD distribuées",
+      "code_ue": "GSI83",
+      "credits_ects": 3,
+      "coefficient": 3,
+      "volume_horaire": {
+        "cm": 15,
+        "td": 15,
+        "tp": 9,
+        "tpe": 6,
+        "total": 45
+      },
+      "a_tp": true,
+      "poids_cc1": 0.1,
+      "poids_cc2": 0.1,
+      "poids_cc3": 0.1,
+      "poids_tp": 0.2,
+      "poids_examen": 0.5
+    },
+    {
+      "code_ec": "GSI832",
+      "intitule": "BD NoSQL et entrepôts de données",
+      "code_ue": "GSI83",
+      "credits_ects": 3,
+      "coefficient": 3,
+      "volume_horaire": {
+        "cm": 10,
+        "td": 10,
+        "tp": 19,
+        "tpe": 6,
+        "total": 45
+      },
+      "a_tp": true,
+      "poids_cc1": 0.1,
+      "poids_cc2": 0.1,
+      "poids_cc3": 0.1,
+      "poids_tp": 0.2,
+      "poids_examen": 0.5
+    },
+    {
+      "code_ec": "GSI833",
+      "intitule": "DSL et génération de code",
+      "code_ue": "GSI83",
+      "credits_ects": 3,
+      "coefficient": 3,
+      "volume_horaire": {
+        "cm": 10,
+        "td": 10,
+        "tp": 19,
+        "tpe": 6,
+        "total": 45
+      },
+      "a_tp": true,
+      "poids_cc1": 0.1,
+      "poids_cc2": 0.1,
+      "poids_cc3": 0.1,
+      "poids_tp": 0.2,
+      "poids_examen": 0.5
+    },
+    {
+      "code_ec": "GSI834",
+      "intitule": "Analyses syntaxique et sémantique",
+      "code_ue": "GSI83",
+      "credits_ects": 3,
+      "coefficient": 3,
+      "volume_horaire": {
+        "cm": 10,
+        "td": 10,
+        "tp": 19,
+        "tpe": 6,
+        "total": 45
+      },
+      "a_tp": true,
+      "poids_cc1": 0.1,
+      "poids_cc2": 0.1,
+      "poids_cc3": 0.1,
+      "poids_tp": 0.2,
+      "poids_examen": 0.5
+    },
+    {
+      "code_ec": "GSI911",
+      "intitule": "Création d'entreprise",
+      "code_ue": "GSI91",
+      "credits_ects": 2,
+      "coefficient": 2,
+      "volume_horaire": {
+        "cm": 4,
+        "td": 4,
+        "tp": 18,
+        "tpe": 4,
+        "total": 30
+      },
+      "a_tp": true,
+      "poids_cc1": 0.1,
+      "poids_cc2": 0.1,
+      "poids_cc3": 0.1,
+      "poids_tp": 0.2,
+      "poids_examen": 0.5
+    },
+    {
+      "code_ec": "GSI912",
+      "intitule": "Recherche des financements",
+      "code_ue": "GSI91",
+      "credits_ects": 2,
+      "coefficient": 2,
+      "volume_horaire": {
+        "cm": 4,
+        "td": 4,
+        "tp": 18,
+        "tpe": 4,
+        "total": 30
+      },
+      "a_tp": true,
+      "poids_cc1": 0.1,
+      "poids_cc2": 0.1,
+      "poids_cc3": 0.1,
+      "poids_tp": 0.2,
+      "poids_examen": 0.5
+    },
+    {
+      "code_ec": "GSI913",
+      "intitule": "Éthique professionnelle",
+      "code_ue": "GSI91",
+      "credits_ects": 2,
+      "coefficient": 2,
+      "volume_horaire": {
+        "cm": 4,
+        "td": 4,
+        "tp": 18,
+        "tpe": 4,
+        "total": 30
+      },
+      "a_tp": true,
+      "poids_cc1": 0.1,
+      "poids_cc2": 0.1,
+      "poids_cc3": 0.1,
+      "poids_tp": 0.2,
+      "poids_examen": 0.5
+    },
+    {
+      "code_ec": "GSI914",
+      "intitule": "Méthodologie de rédaction du mémoire de fin d'étude",
+      "code_ue": "GSI91",
+      "credits_ects": 2,
+      "coefficient": 2,
+      "volume_horaire": {
+        "cm": 4,
+        "td": 4,
+        "tp": 18,
+        "tpe": 4,
+        "total": 30
+      },
+      "a_tp": true,
+      "poids_cc1": 0.1,
+      "poids_cc2": 0.1,
+      "poids_cc3": 0.1,
+      "poids_tp": 0.2,
+      "poids_examen": 0.5
+    },
+    {
+      "code_ec": "GSI921",
+      "intitule": "Modèle SCOR et gestion des projets",
+      "code_ue": "GSI92",
+      "credits_ects": 2,
+      "coefficient": 2,
+      "volume_horaire": {
+        "cm": 10,
+        "td": 6,
+        "tp": 10,
+        "tpe": 4,
+        "total": 30
+      },
+      "a_tp": true,
+      "poids_cc1": 0.1,
+      "poids_cc2": 0.1,
+      "poids_cc3": 0.1,
+      "poids_tp": 0.2,
+      "poids_examen": 0.5
+    },
+    {
+      "code_ec": "GSI922",
+      "intitule": "Test, maintenance et assurance qualité",
+      "code_ue": "GSI92",
+      "credits_ects": 2,
+      "coefficient": 2,
+      "volume_horaire": {
+        "cm": 9,
+        "td": 8,
+        "tp": 7,
+        "tpe": 6,
+        "total": 30
+      },
+      "a_tp": true,
+      "poids_cc1": 0.1,
+      "poids_cc2": 0.1,
+      "poids_cc3": 0.1,
+      "poids_tp": 0.2,
+      "poids_examen": 0.5
+    },
+    {
+      "code_ec": "GSI923",
+      "intitule": "Cyberattaque et cyberdéfense",
+      "code_ue": "GSI92",
+      "credits_ects": 3,
+      "coefficient": 3,
+      "volume_horaire": {
+        "cm": 12,
+        "td": 7,
+        "tp": 20,
+        "tpe": 6,
+        "total": 45
+      },
+      "a_tp": true,
+      "poids_cc1": 0.1,
+      "poids_cc2": 0.1,
+      "poids_cc3": 0.1,
+      "poids_tp": 0.2,
+      "poids_examen": 0.5
+    },
+    {
+      "code_ec": "GSI924",
+      "intitule": "Conception des applications cloud",
+      "code_ue": "GSI92",
+      "credits_ects": 3,
+      "coefficient": 3,
+      "volume_horaire": {
+        "cm": 12,
+        "td": 12,
+        "tp": 15,
+        "tpe": 6,
+        "total": 45
+      },
+      "a_tp": true,
+      "poids_cc1": 0.1,
+      "poids_cc2": 0.1,
+      "poids_cc3": 0.1,
+      "poids_tp": 0.2,
+      "poids_examen": 0.5
+    },
+    {
+      "code_ec": "GSI931",
+      "intitule": "Analyse statistique et fouille de données 1",
+      "code_ue": "GSI93",
+      "credits_ects": 3,
+      "coefficient": 3,
+      "volume_horaire": {
+        "cm": 15,
+        "td": 15,
+        "tp": 9,
+        "tpe": 6,
+        "total": 45
+      },
+      "a_tp": true,
+      "poids_cc1": 0.1,
+      "poids_cc2": 0.1,
+      "poids_cc3": 0.1,
+      "poids_tp": 0.2,
+      "poids_examen": 0.5
+    },
+    {
+      "code_ec": "GSI932",
+      "intitule": "Optimisation, DL et ML",
+      "code_ue": "GSI93",
+      "credits_ects": 3,
+      "coefficient": 3,
+      "volume_horaire": {
+        "cm": 10,
+        "td": 10,
+        "tp": 19,
+        "tpe": 6,
+        "total": 45
+      },
+      "a_tp": true,
+      "poids_cc1": 0.1,
+      "poids_cc2": 0.1,
+      "poids_cc3": 0.1,
+      "poids_tp": 0.2,
+      "poids_examen": 0.5
+    },
+    {
+      "code_ec": "GSI933",
+      "intitule": "Big data et SAS",
+      "code_ue": "GSI93",
+      "credits_ects": 3,
+      "coefficient": 3,
+      "volume_horaire": {
+        "cm": 10,
+        "td": 10,
+        "tp": 19,
+        "tpe": 6,
+        "total": 45
+      },
+      "a_tp": true,
+      "poids_cc1": 0.1,
+      "poids_cc2": 0.1,
+      "poids_cc3": 0.1,
+      "poids_tp": 0.2,
+      "poids_examen": 0.5
+    },
+    {
+      "code_ec": "GSI934",
+      "intitule": "Traitement des entrepôts de données",
+      "code_ue": "GSI93",
+      "credits_ects": 3,
+      "coefficient": 3,
+      "volume_horaire": {
+        "cm": 10,
+        "td": 10,
+        "tp": 19,
+        "tpe": 6,
+        "total": 45
+      },
+      "a_tp": true,
+      "poids_cc1": 0.1,
+      "poids_cc2": 0.1,
+      "poids_cc3": 0.1,
+      "poids_tp": 0.2,
+      "poids_examen": 0.5
+    },
+    {
+      "code_ec": "GSI1011",
+      "intitule": "Séminaires pour le management des projets",
+      "code_ue": "GSI101",
+      "credits_ects": 2,
+      "coefficient": 2,
+      "volume_horaire": {
+        "cm": null,
+        "td": null,
+        "tp": null,
+        "tpe": null,
+        "total": 30
+      },
+      "a_tp": false,
+      "evaluation_specifique": true
+    },
+    {
+      "code_ec": "GSI1012",
+      "intitule": "Stage (3 mois minimum)",
+      "code_ue": "GSI101",
+      "credits_ects": 10,
+      "coefficient": 10,
+      "volume_horaire": {
+        "cm": null,
+        "td": null,
+        "tp": null,
+        "tpe": null,
+        "total": 150
+      },
+      "a_tp": false,
+      "evaluation_specifique": true
+    },
+    {
+      "code_ec": "GSI1013",
+      "intitule": "Mémoire de fin d'étude",
+      "code_ue": "GSI101",
+      "credits_ects": 18,
+      "coefficient": 18,
+      "volume_horaire": {
+        "cm": null,
+        "td": null,
+        "tp": null,
+        "tpe": null,
+        "total": 270
+      },
+      "a_tp": false,
+      "evaluation_specifique": true
     }
   ],
   "groupes": [
+    {
+      "code": "GSI3-A",
+      "intitule": "GSI 3 - Groupe A",
+      "niveau": "GSI3"
+    },
     {
       "code": "GSI4-A",
       "intitule": "GSI 4 - Groupe A",
